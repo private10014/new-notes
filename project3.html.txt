@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <title>testing</title>
+  <head></head>
+<body>
+  <form method="POST">
+   Enter your fav color:<input type=" text" name="favcolor">
+   <input type="submit" name="submit" value="check Now">
+  </form>
+   
+      <?php
+
+      if(isset($_POST['submit'])) {
+        $FavColor = $_POST['favcolor'];
+        
+    switch($FavColor) {
+    case "blue": echo 'your fav color is blue';
+    break;
+
+
+    case "red": echo 'your fav color is red';
+    break;
+
+
+    case "green": echo 'your fav color is green';
+    break;
+
+
+    default: echo 'i am not sure about your fav color';
+    }
+        
+    }
+      ?>
+</body>
+</html>
+
+
+
+
