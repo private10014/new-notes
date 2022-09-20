@@ -1,0 +1,29 @@
+<?php
+
+$server = "localhost";
+$user = "root";
+$passwod = "";
+$db = "signup";
+
+$con = mysqli_connect($server, $user, $passwod, $db);
+
+if($con) {
+    ?>
+    <script>
+        alert("connection sucessful");
+    </script>
+    <?php
+    } else {
+        ?>
+        <script>
+        alert("No connection");
+        </script>
+    <?php
+ 
+}
+
+
+?>
+
+
+
